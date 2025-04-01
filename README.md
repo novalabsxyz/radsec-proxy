@@ -24,6 +24,7 @@ RADIUS messages used to authenticate users and for session accounting are transm
 
 ```bash
 # tar -xvzf  Helium_RadSec_Docker.tag.gz
+```
 
 2. Into the same directory copy the 3 certificates obtained from Helium Network
 	- ca.pem - the root CA certificate
@@ -32,6 +33,9 @@ RADIUS messages used to authenticate users and for session accounting are transm
 3. Start the container using:
 ```bash
 # sudo docker compose up -d
+```
+
 4.If/when needed, stop the container using:
 ```bash
 # sudo docker compose down
+```
