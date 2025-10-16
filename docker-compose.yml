@@ -4,3 +4,9 @@ services:
     ports:
       - "1812:1812/udp"
       - "1813:1813/udp"
+  freeradius:
+    profiles: [ ingress-radsec ]
+    depends_on: [ radsecproxy ]
+    build: ./ingress-radsec
+    ports:
+      - "2083:2083/tcp"

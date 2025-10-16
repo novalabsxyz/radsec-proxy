@@ -39,3 +39,12 @@ RADIUS messages used to authenticate users and for session accounting are transm
 ```bash
 # sudo docker compose down
 ```
+
+## [Optional] Ingress RadSec for self-management of Cisco Meraki AP Certificates
+https://docs.helium.com/mobile/data-only-meraki#configure-helium-ssid-for-radius-access-control
+1. Download your CA certificate from the `RadSec AP Certificates` at `https://dashboard.meraki.com/o/<your-ord-id>/manage/organization/certificates/radsec`
+2. Rename it to `meraki-ca.pem` and copy into `./ingress-radsec`
+3. Start de deployment using:
+```bash
+# sudo docker compose --profile ingress-radsec up
+```
