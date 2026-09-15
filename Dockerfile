@@ -1,6 +1,6 @@
 FROM debian:trixie-slim AS builder
 
-ARG RADSECPROXY_COMMIT=1.11.1
+ARG RADSECPROXY_COMMIT=1.11.4
 ARG DEBIAN_FRONTEND=noninteractive
 
 WORKDIR /build
