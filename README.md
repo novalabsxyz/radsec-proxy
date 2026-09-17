@@ -17,13 +17,17 @@ RADIUS messages used to authenticate users and for session accounting are transm
 
 ## Container Deployment
 
-1. Un-zip and untar the Helium_RadSec_Docker.tag.gz file into the directory of your choice on the host machine. This will unpack the following items:
+1. Clone or download/extract this repository into the directory of your choice on the host machine. This will bring the following items:
 	- Dockerfile - The docker instructions on how to build the container
 	- Radsecproxy.conf - The radsecproxy config file prepopulated to connect to Helium Network AAA servers
 	- docker-compose.yml - file to start and stop the container as a daemon. 
 
 ```bash
-# tar -xvzf  Helium_RadSec_Docker.tag.gz
+# git clone https://github.com/novalabsxyz/radsec-proxy.git
+```
+or
+```bash
+# wget -qO- https://github.com/novalabsxyz/radsec-proxy/archive/refs/heads/main.zip | tar -xvzf -
 ```
 
 2. Into the same directory copy the 3 certificates obtained from Helium Network
