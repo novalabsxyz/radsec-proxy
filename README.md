@@ -10,7 +10,7 @@ RADIUS messages used to authenticate users and for session accounting are transm
 - An intel based machine with Docker installed.
 - The intel based machine has a private IP in your network reachable from your Aruba Mobility Controller
 - ACLs or Firewalls allow Aruba Mobility Controller and Docker Container to communicate UDP on port 1812 and 1813
-- ACLs or Firewalls allow container/host to reach the internet on TCP ports 2083 and 3802.
+- ACLs or Firewalls allow container/host to reach the internet on TCP port 2083.
 
 
 ---
